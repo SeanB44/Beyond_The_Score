@@ -47,6 +47,3 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
-
-# Exclude Functions.R script from being pushed to GitHub
-.Rproj.user/Functions.R
