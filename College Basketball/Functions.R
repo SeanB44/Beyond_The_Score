@@ -1,0 +1,27 @@
+## Libraries ##
+library(httr)
+library(dplyr)
+library(ggplot2)
+library(e1071)
+library(caret)
+library(XML)
+library(readxl)
+library(tidyr)
+library(tidyverse)
+library(openxlsx)
+library(domir)
+library(hoopR)
+library(zoo)
+library(RCurl)
+library(rvest)
+library (ISLR2)
+library(leaps)
+library(car)
+library(pls)
+library(relaimpo)
+usethis::edit_r_environ()
+
+calculate_z_score <- function(x) {
+  z_score <- (x - mean(x)) / sd(x)
+  return(z_score)
+}
