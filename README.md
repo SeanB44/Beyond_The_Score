@@ -20,4 +20,10 @@ Nolan Analytics, LLC: [https://www.warrennolan.com/basketball/2024/index]
 
 Team Rankings, LLC: [https://www.teamrankings.com/ncb/rpi/]
 
+Bseball Prospectus: [https://www.baseballprospectus.com/standings/]
 
+Clay Davenport.com [https://claydavenport.com/projections/PROJHOME.shtml]
+
+Fangraphs: [https://www.fangraphs.com/depthcharts.aspx?position=Team]
+
+Neil Paine: [https://github.com/Neil-Paine-1]
