@@ -259,6 +259,24 @@ season.list<-list()
 
 # Initiate data frame to save simulated games
 simulated.results<-data.frame("Team" = unique(schedule.2024$home_team))
+
+## Export Elo Ratings
+library(openxlsx)
+wb<-createWorkbook()
+addWorksheet(wb, "Elo Ratings")
+addWorksheet(wb, "Schedule")
+writeData(wb, "Schedule", schedule.2024)
+elo.dat.final<-schedule.2024%>%
+  select(home_team, home_rating)%>%
+  group_by(home_team)%>%
+  arrange(desc(home_rating))%>%
+  rename("Team" = "home_team", "Elo Rating" = "home_rating")%>%
+  distinct()
+
+writeData(wb, "Elo Ratings", elo.dat.final)
+# Save Workbook
+saveWorkbook(wb, paste0("./Output/2024 ","Team Elo Ratings - ",Sys.Date(), ".xlsx"), overwrite=TRUE)
+
 # Set number of simulations
 num.sims<-10000
 
